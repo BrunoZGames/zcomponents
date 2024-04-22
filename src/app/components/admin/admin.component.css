@@ -1,0 +1,29 @@
+.formbold-file-list {
+    border-radius: 6px;
+    background: #f5f7fb;
+    padding: 16px 32px;
+  }
+  
+  .formbold-file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .formbold-file-item button {
+    color: #07074d;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .formbold-file-name {
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    padding-right: 12px;
+  }
+
+  .formbold-mb-5 {
+    margin-bottom: 20px;
+  }

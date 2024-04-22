@@ -1,0 +1,26 @@
+<div class="flex flex-col w-full max-w-xl max-h-86 h-86 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class=" p-8 rounded-t-lg max-h-86 h-86 justify-center items-center" src="{{ imgsrc }}" alt="product image" />
+    <div class="px-5 pb-5">
+        <a href="#">
+            <h1 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{{ title }}</h1>
+        </a>
+        <div class="flex items-center justify-between">
+            <span class="text-3xl font-bold text-gray-900 dark:text-white">{{ price }}</span>
+            <a attr.data-popover-target="{{ miid }}" data-popover-trigger="hover" type="button"
+                class="text-white cursor-pointer bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Add
+                to cart</a>
+            
+                <div data-popover id="{{ miid }}" role="tooltip"
+                class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                <div
+                    class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Hey Champ thanks for that</h3>
+                </div>
+                <div class="px-3 py-2">
+                    <p>But you can't buy yet. Hold tight</p>
+                </div>
+                <div data-popper-arrow></div>
+            </div>
+        </div>
+    </div>
+</div>
